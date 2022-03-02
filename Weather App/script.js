@@ -2,6 +2,7 @@
 
 // Call a function to requests the data from the API
 getWeatherData()
+require("dotenv").config();
 
 function getWeatherData() {
 	navigator.geolocation.getCurrentPosition((success) => {
@@ -13,7 +14,7 @@ function getWeatherData() {
 			exclude=minutely&
 			units=metric&
 			lang=es&
-			appid=${API_KEY}`).then(res => res.json()).then(data => {
+			appid=${process.env.API_KEY}`).then(res => res.json()).then(data => {
 			currentData(data);
 			hourlyData(data)
             dailyData(data)
@@ -21,7 +22,7 @@ function getWeatherData() {
 		})
 		fetch(`https://api.openweathermap.org/geo/1.0/reverse?
 			lat=${latitude}&lon=${longitude}&lang=es&
-			appid=${API_KEY}`).then(res => res.json()).then(location => {
+			appid=${process.env.API_KEY}`).then(res => res.json()).then(location => {
 			locationName(location);
 		})
 	})
