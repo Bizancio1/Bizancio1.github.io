@@ -1,8 +1,8 @@
 /*alert('Por favor active la ubicación.')*/
 
 // Call a function to requests the data from the API
-getWeatherData()
-require("dotenv").config();
+getWeatherData()/*
+require("dotenv").config();*/
 
 function getWeatherData() {
 	navigator.geolocation.getCurrentPosition((success) => {
