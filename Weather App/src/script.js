@@ -1,6 +1,6 @@
-/*alert('Por favor active la ubicación.')*/
-/*require(['./scripts/r.js'])
-require(['dotenv']);*/
+
+
+
 // Call a function to requests the data from the API
 getWeatherData()
 
