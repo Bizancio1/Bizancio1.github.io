@@ -113,6 +113,9 @@ h2 {
 
 
 @media screen and (max-width: 800px){
+	.container {
+		height: 100vh;
+	}
 	.pepe {
 		width: 100vw;
 		box-shadow: none;
