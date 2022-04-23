@@ -98,10 +98,10 @@ span {
 	width: 90vw;
 	position: relative;
 	top: -6rem;
-	box-shadow: 0 5px 10px #333;
+	/*box-shadow: 0 5px 10px #212931;*/
 }
 
-.gato {
+.cont_proyect-img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
