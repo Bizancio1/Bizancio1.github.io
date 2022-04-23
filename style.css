@@ -137,19 +137,16 @@ h2 {
 
 
 @media screen and (max-width: 800px){
-	body {
-		background-position: 60% top ;
-		background-attachment: scroll;
-		/*background-size: 10px 30px;
-		*/
-	}
 	.container_start {
 		height: 100vh;
 	}
-	/*.container {
-		height: 100vh;
+
+	.container {
+		background-position: 60% top ;
+		background-attachment: scroll;
 	}
-*/	.pepe {
+
+	.pepe {
 		width: 100%;
 		box-shadow: none;
 		top: 0;
