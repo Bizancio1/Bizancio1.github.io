@@ -33,7 +33,7 @@ body {
 		linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 		url("./bg-img.jpg");
 	background-size: auto cover;
-	background-position: 70% center;
+	background-position: 60% center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -136,7 +136,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 	.container_start {
 		background-color: #212931;
 		background-image: url("../images/overlay.png"), 
