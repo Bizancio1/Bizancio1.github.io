@@ -143,7 +143,7 @@ h2 {
 			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 			url("./bg-img.jpg");
 		background-size: auto cover;
-		background-position: 60% 30%;
+		background-position: 60% center;
 		background-attachment: scroll;
 		background-repeat: no-repeat;
 		height: 100vh;
