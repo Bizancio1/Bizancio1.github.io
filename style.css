@@ -136,7 +136,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 	.container_start {
 		background-color: #212931;
 		background-image: url("../images/overlay.png"), 
