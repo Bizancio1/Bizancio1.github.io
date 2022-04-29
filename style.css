@@ -4,9 +4,10 @@
 	box-sizing: border-box;
 }
 
+
+
 html {
 	scroll-behavior: smooth;
-	/*position: fixed;*/
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 	align-items: center;
 	flex-direction: column;
 	max-width: 100vw;
-	
 
 }
 .container_start {
@@ -23,7 +23,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 100vh ;
+	height: calc(100vh + 135px) ;
 	width: 100%;
 }
 
@@ -46,7 +46,6 @@ body {
 
 h1 {
 	color: #FFFC;
-
 }
 
 ul {
@@ -77,8 +76,8 @@ span {
 	font-size: 4rem;
 	color: #FFFC;
 	height: 4rem;
-	/*animation: bouncing 1s infinite;*/
 }
+
 .btn_see-more {
 	animation: bouncing 1s infinite;
 }
@@ -102,12 +101,83 @@ span {
 
 .pepe {
 	color: #DDD;
-	background: #212931;
 	min-height: 100vh;
-	width: 90vw;
+	width: 100%;
 	position: relative;
-	/*top: -6rem;*/
-	/*box-shadow: 0 5px 10px #212931;*/
+	padding-bottom: 25rem;
+	
+}
+#about {
+	
+	background:  #212931;
+}
+#proyects {
+	background: #445F5A;
+}
+#contact {
+	background: #2D3937;
+}
+
+
+.shape {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);	
+}
+
+.shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 135px;
+}
+
+.shape1 {
+    position: absolute;
+    top: -135px;
+}
+
+.shape1 svg {
+    transform: rotateY(180deg);
+}
+
+.shape1 .shape-fill {
+    fill:  #212931;
+}
+
+.shape2 {
+    position: relative;
+    bottom: 0;
+}
+
+.shape2 .shape-fill {
+    fill: #445F5A;
+}
+
+.shape3 {
+    position: relative;
+    bottom: 0;
+}
+
+.shape3 svg {
+    transform: rotateY(180deg);
+}
+
+.shape3 .shape-fill {
+    fill: #2D3937 ;
+}
+
+
+.shape4 {
+    position: relative;
+    bottom: -135px;
+    transform: rotate(0);
+}
+
+.shape4 .shape-fill {
+    fill:  #2D3937;
 }
 
 .cont_proyect-img {
@@ -119,7 +189,7 @@ span {
 
 p {
 	text-align: justify;
-	margin: .7rem;
+	padding: 1.5rem;
 }
 
 .flex-item {
@@ -133,11 +203,28 @@ p {
 }
 
 h2 {
+	font-size: 40px;
 	color: #FFF;
-	background: #212931;
-	top: 0;
-	position: sticky;
+	background: inherit;
 	padding: .5rem 0 0 1rem;
+}
+
+#about h2 {
+	position: relative;
+	text-align: right;
+	padding: 0 2rem;
+}
+
+#proyects h2 {
+	position: relative;
+	text-align: left;
+	padding: 0 2rem;
+}
+
+#contact h2 {
+	position: relative;
+	text-align: right;
+	padding: 0 2rem;
 }
 
 
@@ -151,7 +238,7 @@ h2 {
 		background-position: 60% center;
 		background-attachment: scroll;
 		background-repeat: no-repeat;
-		height: 100vh;
+		height: calc(100vh + 40px);
 	}
 
 	.container {
@@ -159,8 +246,25 @@ h2 {
 	}
 
 	.pepe {
-		width: 100%;
-		box-shadow: none;
-		top: 0;
+		padding-bottom: 25rem;
+		background-color: #212931;
+		background-image: url("../images/overlay.png"), 
+			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+			url("./bg-img.jpg");
+		background-size:cover 100vh ;
+		background-position: 60% bottom;
+		background-repeat: no-repeat;
+	}
+
+	.shape svg{
+		height: 40px;
+	}
+
+	.shape1{
+		top: -40px;
+	}
+
+	.shape4 {
+		bottom: -40px;
 	}
 }
