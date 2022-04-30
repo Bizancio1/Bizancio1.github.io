@@ -11,6 +11,11 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('change', filterTodo);
 
+function kill(todo){
+	let todos;
+	todos = localStorage.removeItem("todos")
+	todoList.innerHTML = "";
+}
 // Functions
 function addTodo(event){
 	//prevent form from submitting
@@ -20,8 +25,8 @@ function addTodo(event){
 	todoDiv.classList.add("todo");
 	//Create LI
 	const newTodo = document.createElement("li");
-	newTodo.innerText = todoInput.value;
 	newTodo.classList.add("todo-item");
+	newTodo.innerHTML = `<p class="todo-text">${todoInput.value}</p>`;
 	todoDiv.appendChild(newTodo);
 	// ADD TODO TO LOCALSTORAGE
 	saveLocalTodos(todoInput.value);
