@@ -11,11 +11,6 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('change', filterTodo);
 
-function kill(todo){
-	let todos;
-	todos = localStorage.removeItem("todos")
-	todoList.innerHTML = "";
-}
 // Functions
 function addTodo(event){
 	//prevent form from submitting
