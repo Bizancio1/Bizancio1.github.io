@@ -29,13 +29,13 @@ body {
 
 .container {
 	background-color: #212931;
-	background-image: url("../images/overlay.png"), 
+	background-image: url("./overlay.png"), 
 		linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 		url("./bg-img.jpg");
-	background-size: auto cover;
+	background-size: auto, auto, auto cover;
 	background-position: 60% center;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: repeat, no-repeat, no-repeat;
 	text-align: center;
 	width: 100%;
 	display: flex;
@@ -48,16 +48,17 @@ h1 {
 	color: #FFFC;
 }
 
-ul {
+.btn-container {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
-li {
+.start-btn {
+	font-size: 1rem;
 	background: #fff8;
-	list-style: none;
 	border-radius: .5rem;
+	border: none;
 	padding: 1rem;
 }
 
@@ -67,12 +68,12 @@ a {
 	margin: 1rem;
 }
 
-h3 {
+h1 {
 	font-size: 2rem;
 	color: #FFFC;
 }
 
-span {
+.btn_see-more span {
 	font-size: 4rem;
 	color: #FFFC;
 	height: 4rem;
@@ -99,7 +100,7 @@ span {
 
 
 
-.pepe {
+.main {
 	color: #DDD;
 	min-height: 100vh;
 	width: 100%;
@@ -188,6 +189,7 @@ span {
 }
 
 p {
+	color: #DDD;
 	text-align: justify;
 	padding: 1.5rem;
 }
@@ -231,7 +233,7 @@ h2 {
 @media screen and (max-width: 1000px){
 	.container_start {
 		background-color: #212931;
-		background-image: url("../images/overlay.png"), 
+		background-image: url("./overlay.png"), 
 			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 			url("./bg-img.jpg");
 		background-size: auto cover;
@@ -245,13 +247,13 @@ h2 {
 		background: none;
 	}
 
-	.pepe {
+	.main {
 		padding-bottom: 25rem;
 		background-color: #212931;
-		background-image: url("../images/overlay.png"), 
+		background-image: url("./overlay.png"), 
 			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 			url("./bg-img.jpg");
-		background-size:cover 100vh ;
+		background-size:cover 100vh;
 		background-position: 60% bottom;
 		background-repeat: no-repeat;
 	}
