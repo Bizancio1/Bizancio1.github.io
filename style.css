@@ -236,10 +236,10 @@ h2 {
 		background-image: url("./overlay.png"), 
 			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 			url("./bg-img.jpg");
-		background-size: auto cover;
+		background-size: auto, auto, auto cover;
 		background-position: 60% center;
 		background-attachment: scroll;
-		background-repeat: no-repeat;
+		background-repeat: repeat, no-repeat, no-repeat;
 		height: calc(100vh + 40px);
 	}
 
