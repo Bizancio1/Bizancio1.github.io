@@ -1,3 +1,18 @@
+/*-----------------
+--------Index------
+1.General selectors
+2.Input and button
+3.Select  (filter todos)
+4.To-dos
+5.Mobile
+------------------*/
+
+
+
+
+/*---------------------
+	1.General selectors
+----------------------*/
 *{
 	margin: 0;
 	padding: 0;
@@ -12,7 +27,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 	min-height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: top;
 	align-items: center;
 	flex-direction: column;
 }
@@ -20,16 +35,7 @@ body{
 header{
 	font-size: 1.5rem;
 	text-align: center;
-	position: absolute;
-	top: 0;
 }
-
-form {
-	position: absolute;
-	top: 20vh;
-}
-
-
 
 header, form{
 	min-height: 20vh;
@@ -41,6 +47,10 @@ header, form{
 .cont-input {
 	display: flex;
 }
+
+/*--------------------
+	2.Input and button
+---------------------*/
 
 form input, form button{
 	padding: 0.5rem;
@@ -62,22 +72,59 @@ form button:hover{
 	color: white;
 }
 
+/*--------------------------
+	3.Select  (filter todos)
+----------------------------*/
+
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	border: none;
+	color: #ff6f47;
+	width: 10rem;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+.select{
+	margin-left: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.select::after{
+	content: "\25BC";
+	position: absolute;
+	background: #ff6f47;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.select:hover::after{
+	background: white;
+	color: #ff6f47;
+}
+
+/*-----------------
+	4.To-dos
+------------------*/
+
 .todo-container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;	
-	top: 40vh;
 }
 
 .todo-list{
-	
-	/*min-width: 30%;*/
 	list-style: none;
 }
 
 .todo{
-	width: clamp(100px, 80vw, 700px);
+	width: clamp(645px, 80vw, 750px);
 	margin: 0.5rem;
 	background: white;
 	color: black;
@@ -86,6 +133,10 @@ form button:hover{
 	justify-content: space-between;
 	align-items: center;
 	transition: all 0.5s ease;
+}
+
+.todo-input {
+		width: calc(clamp(645px, 80vw, 750px) - 220px);
 }
 
 .todo li{
@@ -106,7 +157,7 @@ form button:hover{
 
 .todo-item{
 	padding: 0rem 0.5rem;
-	max-width: calc(100% - 88px);
+	max-width: calc(100% - 87px);
 	word-wrap: break-word;
 }
 
@@ -129,43 +180,9 @@ form button:hover{
 	opacity: 0;
 }
 
-select{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	outline: none;
-	border: none;
-}
-
-.select{
-	margin: 1rem;
-	position: relative;
-	overflow: hidden;
-}
-
-select{
-	color: #ff6f47;
-	width: 10rem;
-	cursor: pointer;
-	padding: 1rem;
-}
-
-.select::after{
-	content: "\25BC";
-	position: absolute;
-	background: #ff6f47;
-	top: 0;
-	right: 0;
-	padding: 1rem;
-	pointer-events: none;
-	transition: all 0.3s ease;
-}
-
-.select:hover::after{
-	background: white;
-	color: #ff6f47;
-
-}
-
+/*---------------
+	5.Mobile
+---------------*/
 
 @media screen and (max-width: 800px) {
 	form {
@@ -174,15 +191,12 @@ select{
 		max-width: 80vw;
 	}
 
-	/*.cont-input {
-		max-width: 100%;
+	.todo {
+		width: clamp(200px, 80vw, 550px);
 	}
-*/
-	/*input {
-		max-width: ;
-	}*/
+
 	.todo-input {
-		max-width: calc(100% - 44px);
+		width: calc(clamp(200px, 80vw, 550px) - 44px);
 	}
 
 	.todo-container {
@@ -190,7 +204,7 @@ select{
 	}
 
 	.todo-item {
-		max-width: calc(100% - 88px);
+		max-width: calc(100% - 87px);
 	}
 
 	.cont-input {

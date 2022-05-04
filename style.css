@@ -23,7 +23,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: calc(100vh + 135px) ;
+	height: calc(100vh + calc(100vw / 10)) ;
 	width: 100%;
 }
 
@@ -132,12 +132,12 @@ h1 {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 135px;
+    height: calc(100vw / 10);
 }
 
 .shape1 {
     position: absolute;
-    top: -135px;
+    top: calc((100vw / -10) + 1px);
 }
 
 .shape1 svg {
@@ -148,18 +148,13 @@ h1 {
     fill:  #212931;
 }
 
-.shape2 {
+.shape2, .shape3{
     position: relative;
-    bottom: 0;
+    bottom: -1px;
 }
 
 .shape2 .shape-fill {
     fill: #445F5A;
-}
-
-.shape3 {
-    position: relative;
-    bottom: 0;
 }
 
 .shape3 svg {
@@ -173,7 +168,7 @@ h1 {
 
 .shape4 {
     position: relative;
-    bottom: -135px;
+    bottom: calc(100vw / -10);
     transform: rotate(0);
 }
 
@@ -240,7 +235,6 @@ h2 {
 		background-position: 60% center;
 		background-attachment: scroll;
 		background-repeat: repeat, no-repeat, no-repeat;
-		height: calc(100vh + 40px);
 	}
 
 	.container {
@@ -256,17 +250,5 @@ h2 {
 		background-size:cover 100vh;
 		background-position: 60% bottom;
 		background-repeat: no-repeat;
-	}
-
-	.shape svg{
-		height: 40px;
-	}
-
-	.shape1{
-		top: -40px;
-	}
-
-	.shape4 {
-		bottom: -40px;
 	}
 }
