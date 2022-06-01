@@ -222,13 +222,13 @@ h2 {
 #about h2 {
 	position: relative;
 	text-align: right;
-	padding: 0 2em;
+	padding-left: 2em;
 }
 
 #proyects h2 {
 	position: relative;
 	text-align: left;
-	padding: 0 2em;
+	padding-right: 2em;
 }
 
 .cont-proyects {
@@ -287,7 +287,7 @@ h2 {
 #contact h2 {
 	position: relative;
 	text-align: right;
-	padding: 0 2rem;
+	padding-left: 2rem;
 }
 
 
