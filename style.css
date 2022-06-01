@@ -239,7 +239,7 @@ h2 {
 }
 
 .card {
-	width: 18.75rem;
+	width: clamp(15rem, 67vw, 18.75rem);
 	border: 1px solid #FFF;
 	display: flex;
 	justify-content: center;
