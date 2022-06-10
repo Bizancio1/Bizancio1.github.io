@@ -253,6 +253,7 @@ h2 {
 
 .card img {
 	width: 100%;
+	border-bottom: 1px solid #FFF;
 	border-radius: 1em;
 }
 
@@ -274,7 +275,7 @@ h2 {
 }
 
 .try-it:hover {
-	background: #FFF2;
+	background: #FFFFFF15;
 	transition: background .1s ease;
 }
 
