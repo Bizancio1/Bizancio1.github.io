@@ -359,12 +359,16 @@ h2 {
 }
 
 footer {
-	color: #111;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	height: 100px;
 	width: 100%;
 	background: #2E2E2E;
+}
+
+.attribution {
+	color: white;
 }
 
 
@@ -378,7 +382,7 @@ footer {
 		background-position: 60% center;
 		background-attachment: scroll;
 		background-repeat: no-repeat;
-		height: calc(100% + calc(100vw / 10));
+		height: calc(100vh + calc(100vw / 10));
 	}
 	.container_start img {
 		width: clamp(200px, 40vh, 1000px);
