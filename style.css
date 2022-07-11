@@ -373,6 +373,7 @@ h2 {
 		width: clamp(200px, 60vw, 1000px);
 	}
 	.container {
+		background-attachment: scroll;
 	}
 
 	.container_start .name, .container_start .descrip {
