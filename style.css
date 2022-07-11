@@ -368,14 +368,6 @@ h2 {
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		height: calc(726px + calc(100vw / 10));
-		/*background-color: #212931;
-		background-image: url("./images/overlay.png"), 
-			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-			url("./images/bg-img.jpg");
-		background-size: auto, auto, auto cover;
-		background-position: 60% center;
-		background-attachment: scroll;
-		background-repeat: repeat, no-repeat, no-repeat;*/
 	}
 	.container_start img {
 		width: clamp(200px, 60vw, 1000px);
