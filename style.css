@@ -396,16 +396,17 @@ h2 {
 	}
 
 
-	/*.main {
-		padding-bottom: 25rem;
+	.main {
+		background-attachment: scroll;
+		/*padding-bottom: 25rem;
 		background-color: #212931;
 		background-image: url("./images/overlay.png"), 
 			linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
 			url("./images/bg-img.jpg");
 		background-size:cover 100vh;
 		background-position: 60% bottom;
-		background-repeat: no-repeat;
-	}*/
+		background-repeat: no-repeat;*/
+	}
 
 	.cont-proyects {
 		flex-direction: column;
