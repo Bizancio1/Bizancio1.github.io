@@ -378,10 +378,10 @@ footer {
 		background-position: 60% center;
 		background-attachment: scroll;
 		background-repeat: no-repeat;
-		height: calc(100vh + calc(100vw / 10));
+		height: calc(100% + calc(100vw / 10));
 	}
 	.container_start img {
-		width: clamp(200px, 50vh, 1000px);
+		width: clamp(200px, 40vh, 1000px);
 
 
 	}
