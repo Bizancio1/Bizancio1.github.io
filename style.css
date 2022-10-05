@@ -110,8 +110,10 @@ a {
 }
 
 .main {
+	position: relative;
 	background: none;
-	padding-bottom: 25rem;
+	top: calc(100vw / -10);
+	padding-bottom: 5rem;
 }
 
 #about {
@@ -120,7 +122,6 @@ a {
 
 #proyects {
 	position: relative;
-	padding-top: calc(100vw / 10);
 	background: rgba(0, 0, 0, 0);/*#445F5A*/;
 }
 
@@ -149,7 +150,7 @@ a {
 
 .shape1 {
   position: relative;
-  top: calc((100vw / -10) + 2px);
+  bottom: -2px;
 }
 
 .shape1 svg {
@@ -179,7 +180,6 @@ a {
 
 .shape2, .shape4 {
     position: relative;
-    bottom: calc(100vw / -10);
     transform: rotate(0);
 }
 
